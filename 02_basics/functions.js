@@ -34,4 +34,38 @@ function userLoggedIn (username = "sam") {
 
 // console.log(userLoggedIn('Hamza'));
 // if user not defined the the result is undefined
-console.log(userLoggedIn('Hamza'));
+// console.log(userLoggedIn('Hamza'));
+
+
+// how to pass rest operator in functions
+// ... is a rest operator
+
+function calculateCartPrice (...price1) {
+    return price1
+}
+
+console.log(calculateCartPrice(100,300,400))
+
+
+// how to pass object and array  to functions
+
+const user = {
+    name: 'hamza',
+    price: 1000,
+}
+
+function handleObject (anyobject) {
+  console.log(`the username is ${anyobject.name} and the price is ${anyobject.price}`)
+}
+handleObject({
+    name : 'sam',
+    price : 90
+}); 
+
+const myArr = [1,2,3,4];
+
+function handleArray (anyarray) {
+    return anyarray[3]
+}
+
+console.log(handleArray(myArr));
