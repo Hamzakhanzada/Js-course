@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white;">
+    <div class="parent">
+        <!-- this is comment -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wendesday</div>
+        <div class="day">Thrusday</div>
+    </div>
+</body>
+<script>
+    document.querySelector('.parent');
+    const searchParent = document.querySelector('.parent');
+    // console.log(searchParent);
+    // console.log(searchParent.children);
+    // console.log(searchParent.children[1].innerHTML);
+    // for (let index = 0; index < searchParent.children.length; index++) {
+    //     console.log(searchParent.children[index].innerHTML)
+        
+    // }
+    searchParent.children[1].style.color = "orange";
+    // console.log(searchParent.firstElementChild.innerHTML);
+    // console.log(searchParent.lastElementChild.innerHTML);
+
+  const  dayOne = document.querySelector('.day')
+  console.log(dayOne.innerHTML);
+  console.log(dayOne.parentElement);
+  console.log(dayOne.nextElementSibling.innerHTML);
+  console.log(searchParent.childNodes);
+</script>
+
+</html>
